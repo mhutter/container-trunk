@@ -8,7 +8,7 @@
       "fileMatch": ["^Dockerfile"],
       "matchStrings": ["TRUNK_VERSION=(?<currentValue>[0-9\\.]+)"],
       "depNameTemplate": "trunk-rs/trunk",
-      "datasourceTemplate": "github-release"
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
