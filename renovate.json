@@ -2,13 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["local>mhutter/.github:renovate-config", ":automergePatch"],
   "enabledManagers": ["regex"],
-    "customManagers": [
+  "customManagers": [
     {
       "customType": "regex",
       "fileMatch": ["^Dockerfile"],
-      "matchStrings": [
-        "cargo install( --[^ ]+)* (?<depName>[^@]+)@(?<currentValue>[0-9\.]+)"
-      ],
-      "datasourceTemplate": "crate"
-    },
+      "matchStrings": ["TRUNK_VERSION=(?<currentValue>[0-9\\.]+)"],
+      "depNameTempalte": "trunk-rs/trunk",
+      "datasourceTemplate": "github-release"
+    }
+  ]
 }
