@@ -7,7 +7,7 @@
       "customType": "regex",
       "fileMatch": ["^Dockerfile"],
       "matchStrings": ["TRUNK_VERSION=(?<currentValue>[0-9\\.]+)"],
-      "depNameTempalte": "trunk-rs/trunk",
+      "depNameTemplate": "trunk-rs/trunk",
       "datasourceTemplate": "github-release"
     }
   ]
