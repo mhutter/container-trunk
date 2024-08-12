@@ -8,3 +8,5 @@ Contains
 Pull from
 
     ghcr.io/mhutter/trunk:latest
+
+[trunk]: https://trunkrs.dev/
