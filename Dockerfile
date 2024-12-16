@@ -1,7 +1,7 @@
 FROM docker.io/curlimages/curl:latest AS curl
 WORKDIR /work
 
-ENV TRUNK_VERSION=0.21.4
+ENV TRUNK_VERSION=0.21.5
 ENV FILENAME=trunk-x86_64-unknown-linux-gnu.tar.gz
 ENV URL="https://github.com/trunk-rs/trunk/releases/download/v${TRUNK_VERSION}/${FILENAME}"
 
